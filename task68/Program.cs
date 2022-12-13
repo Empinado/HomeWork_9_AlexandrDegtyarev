@@ -17,7 +17,7 @@ int AkkermanFunc(int m, int n)
     {
         return AkkermanFunc(m - 1, 1);
     }
-    return AkkermanFunc(m - 1, AkkermanFunc(m, n - 1));
+    return AkkermanFunc(m - 1, AkkermanFunc(m, n - 1));//m,n>0
 }
 
 Console.WriteLine("A(m,n) = "+AkkermanFunc(M, N));
